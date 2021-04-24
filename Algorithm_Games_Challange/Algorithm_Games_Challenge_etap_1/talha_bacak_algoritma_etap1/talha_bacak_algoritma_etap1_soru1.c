@@ -21,6 +21,10 @@ int main(){
 	while(flag == 1 && sayi > control){		
 		i = 3;
 		flag = 0;
+
+                if(sayi % 2 == 0){
+                        flag = 1;
+                }
 		while(flag == 0 && i <= sqrt(sayi)){
 			if(sayi % i == 0){
 				flag = 1;
